@@ -7,10 +7,6 @@ import priv.zhengfa.mybatis.dao.User;
 import priv.zhengfa.mybatis.dao.UserMapper;
 import priv.zhengfa.mybatis.service.UserService;
 
-/**
- * @author Tommy
- * Created by Tommy on 2019/7/4
- **/
 @Service
 public class UserServiceImpl implements UserService {
     @Autowired
@@ -20,18 +16,5 @@ public class UserServiceImpl implements UserService {
     public User getUser(Integer id) {
         userMapper.selectByid(id);
         return userMapper.selectByid(id);
-    }
-
-    @Override
-    @Transactional()
-    public User getUser2(Integer id) {
-        userMapper.selectByid(id);
-        return userMapper.selectByid(id);
-    }
-
-    @Override
-    @Transactional()
-    public void registerUser(User user) {
-        int i = 1 / 0;
     }
 }
