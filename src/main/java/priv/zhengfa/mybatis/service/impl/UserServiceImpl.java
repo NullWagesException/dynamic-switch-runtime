@@ -7,6 +7,7 @@ import priv.zhengfa.mybatis.dao.User;
 import priv.zhengfa.mybatis.dao.UserMapper;
 import priv.zhengfa.mybatis.service.UserService;
 
+
 @Service
 public class UserServiceImpl implements UserService {
     @Autowired
